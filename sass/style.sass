@@ -1,0 +1,109 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+*
+    box-sizing: border-box
+
+
+@font-face 
+    font-family: "MontserraT"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+    
+@font-face 
+    font-family: "MontserraT"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+@font-face 
+    font-family: "Lato-BoldT"
+    src: url('../fonts/Lato-Bold.ttf')
+    font-weight: bold
+    font-style: normal
+
+@font-face 
+    font-family: "Lato-BoldT"
+    src: url('../fonts/Lato-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+
+$color-header: #D9D9D9
+$color-navigation: #B0B0B0
+$color-content: #C5CAC8
+$color-base: #ECE8E8
+
+
+
+html
+    font-family: "MontserraT"
+    font-weight: regular
+
+
+h1
+    font-size: 14 px
+    
+
+header
+    
+    background-color: $color-header
+    .container
+        height: 50px
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        
+
+        .title
+            display: inline-block
+            position: relative
+            margin-top: 15px
+
+
+        .user_avatar
+            margin-top: 15px
+
+            display: inline-block
+            position: relative
+            width: 24px
+            height: 24px
+            align-content: center
+
+
+            background: rgba(139, 85, 230, 0.55)
+            border: 0.8px solid #6843A6
+            border-radius: 40px
+
+
+            span
+                position: relative
+                display: inline-block
+                font-family: "Lato-BoldT"
+                font-weight: bold
+                font-size: 10px
+            
+                
+.navigation
+    background-color: $color-navigation
+    min-height: 500px
+
+.content
+    background-color: $color-content
+
+    input
+        font-family: "Lato-BoldT"
+        height: 25px
+        width: 70%
+        margin-top: 10px
+
+.base
+    background-color: $color-base
+
+
+.card
+    width: 80%
+    height: 40px
